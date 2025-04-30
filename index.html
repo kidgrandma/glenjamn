@@ -243,41 +243,54 @@
   <span style="
     position: relative;
     display: inline-block;
-    color: #ff66cc;
+    color: #ff99cc;
     font-weight: bold;
     text-shadow:
-      0 0 2px #ff66cc,
-      0 0 5px #ff66cc,
-      0 0 10px #ff66cc,
-      0 0 15px #ff66cc;
-    animation: glitch 1s infinite;
+      0 0 1px #ff99cc,
+      0 0 3px #ff99cc,
+      0 0 5px #ff99cc;
+    animation: soft-glow 2s infinite ease-in-out;
   ">
     EXTENDED TO MAY 10TH
   </span> *:･ﾟ✧
 </p>
 
 <style>
-@keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-1px, 1px); }
-  40% { transform: translate(-1px, -1px); }
-  60% { transform: translate(1px, 1px); }
-  80% { transform: translate(1px, -1px); }
-  100% { transform: translate(0); }
+@keyframes soft-glow {
+  0%, 100% { text-shadow: 0 0 1px #ff99cc, 0 0 3px #ff99cc, 0 0 5px #ff99cc; }
+  50% { text-shadow: 0 0 2px #ff99cc, 0 0 4px #ff99cc, 0 0 6px #ff99cc; }
 }
 </style>
     
-    <div style="display: flex; gap: 10px; margin: 15px 0;">
-      <div style="flex: 1; background: rgba(0,0,0,0.5); padding: 10px; border: 1px solid #00ffff; box-shadow: 0 0 10px #00ffff inset;">
-        <p style="color: #00ffff; font-size: 0.8em; margin: 0 0 3px 0; font-weight: bold;">LIMITED PRINTS</p>
-        <p style="color: #aaa; font-size: 0.7em; margin: 0;">SO-ME collab</p>
-      </div>
-      <div style="flex: 1; background: rgba(0,0,0,0.5); padding: 10px; border: 1px solid #ff00ff; box-shadow: 0 0 10px #ff00ff inset;">
-        <p style="color: #ff00ff; font-size: 0.8em; margin: 0 0 3px 0; font-weight: bold;">BOOKS</p>
-        <p style="color: #aaa; font-size: 0.7em; margin: 0;">my.ISM editions</p>
-      </div>
-    </div>
+<div style="display: flex; gap: 12px; margin: 20px 0;">
+  <!-- LIMITED PRINTS BOX -->
+  <div style="flex: 1; background: rgba(0,20,30,0.7); 
+             padding: 12px; border: 1px solid #00ffff;
+             box-shadow: 0 0 12px rgba(0,255,255,0.5) inset, 0 0 8px rgba(0,255,255,0.3);
+             border-radius: 3px; backdrop-filter: blur(2px);">
+    <p style="color: #00ffff; font-size: 0.85em; margin: 0 0 5px 0; 
+              font-weight: bold; letter-spacing: 1px; text-shadow: 0 0 5px rgba(0,255,255,0.5);">
+      LIMITED PRINTS
+    </p>
+    <p style="color: #c0f0ff; font-size: 0.75em; margin: 0; font-family: 'Courier New', monospace;">
+      ✧ SO-ME collab ✧
+    </p>
   </div>
+  
+  <!-- BOOKS BOX -->
+  <div style="flex: 1; background: rgba(30,0,30,0.7); 
+             padding: 12px; border: 1px solid #ff66ff;
+             box-shadow: 0 0 12px rgba(255,0,255,0.5) inset, 0 0 8px rgba(255,0,255,0.3);
+             border-radius: 3px; backdrop-filter: blur(2px);">
+    <p style="color: #ff66ff; font-size: 0.85em; margin: 0 0 5px 0; 
+              font-weight: bold; letter-spacing: 1px; text-shadow: 0 0 5px rgba(255,0,255,0.5);">
+      BOOKS
+    </p>
+    <p style="color: #f0c0ff; font-size: 0.75em; margin: 0; font-family: 'Courier New', monospace;">
+      ✦ my.ISM editions ✦
+    </p>
+  </div>
+</div>
 
   <!-- Music Section -->
   <div style="background: rgba(0,0,0,0.7); padding: 15px; margin: 0 0 20px 0; position: relative; border: 1px solid #00ffff;">
