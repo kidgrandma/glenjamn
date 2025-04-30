@@ -90,7 +90,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/></svg>
         </button>
         <div class="songName">
-            <span class="title">Robot Rock//Oh Yeah</span>
+            <span class="title">ALIVE 2007 ENCORE</span>
             <span class="artist">DAFT PUNK</span>
             <div id="playing"></div>
         </div>
@@ -98,7 +98,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var audio = new Audio('twin.mp3');
+            var audio = new Audio('Encore.mp3');
 
             document.getElementById("playSong").addEventListener('click', function() {
                 playAudio();
@@ -136,7 +136,7 @@
                     <span class="panel-value">AMC Stubs, Interstella 5555, School of rock</span>
                     
                     <span class="panel-key">Television</span>
-                    <span class="panel-value">Literally any reality tv show about cruises. Rage bait YouTube. Rizzler.</span>
+                    <span class="panel-value">Literally any reality tv show about cruises. Rage bait YouTube. Rizzler. THEME PARK TOURS. ALL OF THEM.</span>
                     
                     <span class="panel-key">Books</span>
                     <span class="panel-value">Mine.</span>
@@ -231,15 +231,41 @@
   <!-- Event Info -->
   <div style="margin: 0 0 25px 0; background: rgba(0,0,0,0.7); padding: 10px; border: 1px dashed #ff00ff;">
     <p style="color: #ff66cc; font-size: 1em; margin: 0 0 5px 0; font-weight: bold; text-shadow: 0 0 5px #ff00ff;">
-      <blink>✦ OPENING RECEPTION: APRIL 9, 6-10PM ✦</blink>
+      <blink>✦ NOW OPEN ✦</blink>
     </p>
     <p style="color: #fff; font-size: 0.9em; margin: 0 0 3px 0;">
       <strong>HVW8 Gallery</strong><br>
       661 N. Spaulding Ave. 90036
     </p>
-    <p style="color: #fff; font-size: 0.9em; margin: 0 0 15px 0; font-family: 'Courier New';">
-      ✧･ﾟ: * Exhibition Runs to April 19th *:･ﾟ✧
-    </p>
+<p style="color: #fff; font-size: 0.9em; margin: 0 0 15px 0; font-family: 'Courier New';">
+  ✧･ﾟ: * Exhibition Runs to 
+  <span style="text-decoration: line-through; opacity: 0.5;">April 19th</span> 
+  <span style="
+    position: relative;
+    display: inline-block;
+    color: #ff66cc;
+    font-weight: bold;
+    text-shadow:
+      0 0 2px #ff66cc,
+      0 0 5px #ff66cc,
+      0 0 10px #ff66cc,
+      0 0 15px #ff66cc;
+    animation: glitch 1s infinite;
+  ">
+    EXTENDED TO MAY 10TH
+  </span> *:･ﾟ✧
+</p>
+
+<style>
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(-1px, -1px); }
+  60% { transform: translate(1px, 1px); }
+  80% { transform: translate(1px, -1px); }
+  100% { transform: translate(0); }
+}
+</style>
     
     <div style="display: flex; gap: 10px; margin: 15px 0;">
       <div style="flex: 1; background: rgba(0,0,0,0.5); padding: 10px; border: 1px solid #00ffff; box-shadow: 0 0 10px #00ffff inset;">
